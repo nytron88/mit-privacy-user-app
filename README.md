@@ -1,7 +1,7 @@
-# OAuth2 based ETA Prediction app for the users
+# mit-privacy-user-app
 **This is reference implementation for the users with "developer" role who can follow the code to develop newer versions**
 
-This is React Native app that allows the users to post the ETAs through mobile app. The users can post up to 10 ETAs that are then sent over to the [Privacy Guardian](https://github.com/nytron88/eta-prediction-privacy-guardian-oauth2). The app works on the principal of [Secured Multi-Party Computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation) where each ETA entered by the user is sent to to backend servers - a random integer R and and the the difference of ETA and R (X - R).
+This is React Native app that allows the users to post the data through mobile app. The users can post up to 10 data points that are then sent over to the [Privacy Guardian](https://github.com/nytron88/mit-privacy-backend). The app works on the principal of [Secured Multi-Party Computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation) where each data point entered by the user is sent to to backend servers - a random integer R and and the the difference of data point and R (X - R).
 
 
 ## Prerequsities
@@ -22,9 +22,9 @@ This is React Native app that allows the users to post the ETAs through mobile a
 3. Checkout the code and change into the project directory:
    
    ```
-   git clone https://github.com/nytron88/eta-prediction-user-oauth2.git
+   git clone https://github.com/nytron88/mit-privacy-user-app.git
    
-   cd eta-prediction-user-oauth2
+   cd mit-privacy-user-app
    ```
 4. Install the required packages
 
@@ -61,7 +61,7 @@ This is React Native app that allows the users to post the ETAs through mobile a
 ## Configuration
 1. There are two cinfig files of interest: ```.env``` and ```app/auth0-configuration.js```.
  
-   a. The .env file contains the below properties:
+   a. The .env file contains the below properties (sample):
 
    ```
    R_SERVER_URL = http://10.0.2.2:8181
