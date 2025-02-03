@@ -1,4 +1,4 @@
-MIT Media Lab Camera Culture Group Privacy System User App
+# MIT Media Lab Camera Culture Group Privacy System User App
 **This is reference implementation for the users with "developer" role who can follow the code to develop newer versions**
 
 This is React Native app that allows the users to post the data through mobile app. The users can post up to 10 data points that are then sent over to the [Privacy Guardian](https://github.com/nytron88/mit-privacy-backend). The app works on the principal of [Secured Multi-Party Computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation) where each data point entered by the user is sent to to backend servers - a random integer R and and the the difference of data point and R (X - R).
